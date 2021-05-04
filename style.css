@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url(assets/league-spartan-master/LeagueSpartan-Bold.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(assets/Lato/Lato-Bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    font-family: Lato;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: League Spartan;
+    font-size: 3.5em;
+}
+
+h2 {
+    font-family: League Spartan;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-family: League Spartan;
+    font-size: 1.5em;
+}
