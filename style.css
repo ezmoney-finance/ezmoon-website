@@ -13,22 +13,56 @@
 }
 
 body {
-    background-image: url(assets/bgs/stars-bg.png);
+    /* background-image: url(assets/bgs/stars-bg.png), url(assets/bgs/planets.png); */
     background-color: black;
+    /* background-repeat: repeat-y repeat-x, no-repeat no-repeat; */
+    box-sizing: border-box;
+    /* background-size: 900px; */
+    display: grid;
+    /* padding: 60px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+#bg1 {
+    background-image: url(assets/bgs/stars-bg.png);
     background-repeat: repeat-y repeat-x;
     box-sizing: border-box;
-    /* padding: 60px; */
+    background-size: 900px;
+    /* mix-blend-mode: normal; */
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    background-attachment: fixed;
+}
+
+#bg2 {
+    background-image: url(assets/bgs/planets.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    /* background-size: 100vw; */
+    background-position: top;
+    /* background-position: 1vw 43vw; */
+    opacity: 0.45;
+    width: 100%;
+    height: 100%;
+    grid-row: 1;
+    overflow: hidden;
+    grid-column: 1;
 }
 
 * {
     font-family: Lato;
-    font-size: 1.08em;
+    font-size: 1.04em;
     color: white;
 }
 
 h1 {
     font-family: League Spartan;
-    font-size: 3.0em;
+    font-size: 3.2em;
     text-transform: uppercase;
 }
 
@@ -36,26 +70,19 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-family: League Spartan;
-    font-size: 2.1em;
+    font-size: 2.8em;
 }
 
 h3 {
     font-family: League Spartan;
-    font-size: 1.11em;
+    font-size: 1.8em;
     text-transform: uppercase;
 }
 
 h4 {
     font-family: League Spartan;
-    font-size: 1em;
+    font-size: 1.28em;
     text-transform: uppercase;
-}
-
-div {
-    border-width: 2px;
-    border-color: red;
-    border-style: solid;
-    box-sizing: border-box;
 }
 
 
@@ -86,8 +113,6 @@ ul li {
 }
 
 #last-sect {
-    background-image: url(assets/bgs/pedro-lastra-wCujVcf0JDw-unsplash.jpg);
-    background-size: 215vw;
     /* position: absolute;
     bottom: 00px; */
     /* background-position: ; */
@@ -99,17 +124,159 @@ ul li {
 
 header {
     box-sizing: border-box;
-    padding: 20px 70px 0 70px;
-    max-width: 1700px;
+    padding: 0px 50px 0 50px;
+    max-width: 1300px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#ezmoon-h1 {
+    color: #F9D046;
+}
+
+#logo img {
+    width: 140px;
+}
+
+#buynow-button {
+    background-color: #4FDF93;
+    border-radius: 12px;
+    width: 190px;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-anchor: middle;
+}
+
+#buynow-button h3 {
+    text-align: center;
+    font-size: 1.5em;
 }
 
 section {
     box-sizing: border-box;
-    /* max-width: 1700px;
-    margin: auto; */
-    /* justify-self: center; */
+    margin-bottom: 160px;
+    padding: 0px 60px 0px 60px;
+}
+
+#sections {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#coin-info-section {
+    margin-top: 240px;
+}
+
+.coin-info-numbers {
+    color: #F9D046;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#contract-address-div {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+#contract-address-div h3 {
+    margin-bottom: 40px;
+}
+
+.coin-info-icons {
+    height: 90px;
+    margin: 0 70px;
+}
+
+#contract-address-bar {
+    height: 80px;
+    /* padding: 20px 30px; */
+}
+
+
+/*
+#contract-address-bar .bar {
+    height: 60px; */
+
+
+/* padding: 20px 30px; */
+
+
+/* width: 90;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px 0 0 16px;
+    background-color: #434258;
+}*/
+
+#contract-address-bar .bar p {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+}
+
+#contract-address-bar .button {
+    /* background-color: #4FDF93; */
+    /* height: 60px; */
+    /* width: 140px;
+    border-radius: 0 16px 16px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    /* padding: 20px 30px; */
+}
+
+#contract-address {
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: center;
 }
 
 footer {
     background-color: #313131;
+    box-sizing: border-box;
+    /* min-height: 1100px; */
+    /* height: 300px; */
 }
+
+.feature-icon {
+    height: 60px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    margin-bottom: 120px;
+}
+
+
+/* #feature-1-icon {
+    height: 60px;
+}
+
+#feature-2-icon {
+    height: 60px;
+}
+
+#feature-3-icon {
+    height: 60px;
+} */
+
+
+/* div {
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    box-sizing: border-box;
+} */
