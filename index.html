@@ -14,8 +14,8 @@
 
     <header class="row justify-content-between align-items-center">
 
-        <div id="logo" class="row-sm-3"><img src="assets/illus/logo.png"></div>
-        <div id="navbar" class="row-md-9 hidden-sm d-flex flex-row">
+        <div id="logo" class="row-sm-3"><img class="h-100%" src="assets/illus/logo.png"></div>
+        <div id="navbar" class="row-md-9 visible-md d-flex flex-row navbar navbar-default">
             <ul>
                 <a href="">
                     <li>Home</li>
@@ -38,42 +38,41 @@
 
 
     <section class='row'>
-        <div class="col-md-7 d-flex flex-column align-content-sm-center align-content-md-start justify-content-center">
+        <div class="col-md-7 d-flex flex-column align-items-center align-items-md-start justify-content-center">
             <p>Welcome to</p>
-            <div class="container 200 200"></div>
             <h1>EZMOON</h1>
-            <p>The EZMOON Protocol is a commmunity driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition and Burn.</p>
+            <p class="text-center text-md-left">The EZMOON Protocol is a commmunity driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition and Burn.</p>
             <button>
                 BUY NOW
             </button>
         </div>
 
-        <div class="col-md-5 justify-content-start align-content-start align-content-sm-center">
-            <img src="assets/illus/logo_3d.png">
+        <div class="col-md-5 d-flex flex-column justify-content-start align-items-center align-items-md-start">
+            <img src="assets/illus/logo_3d.png" class="w-100">
         </div>
 
 
     </section>
 
 
-    <section class="row justify-content-around align-content-center">
+    <section class="row justify-content-around align-items-start">
 
-        <div class="col-md-3">
-            <img src="assets/illus/solid user-alt-slash.png">
-            <h4>No dev tokens</h4>
-            <p>No tokens are reserved for the team. Everyone has an equal chance of investing in EZMOON.</p>
+        <div class="col-md-3 d-flex flex-column justify-content-start align-items-center">
+            <div> <img src="assets/illus/solid user-alt-slash.png"></div>
+            <h4 class="text-center">No dev tokens</h4>
+            <p class="text-center">No tokens are reserved for the team. Everyone has an equal chance of investing in EZMOON.</p>
         </div>
 
-        <div class="col-md-3">
-            <img src="assets/illus/solid percent.png">
-            <h4>rfi static rewards</h4>
-            <p>Holders earn passive rewards through static reflectioon as they watch their balance of EZMOON grow indefinitely.</p>
+        <div class="col-md-3 d-flex flex-column justify-content-start align-items-center">
+            <div> <img src="assets/illus/solid percent.png"></div>
+            <h4 class="text-center">rfi static rewards</h4>
+            <p class="text-center">Holders earn passive rewards through static reflectioon as they watch their balance of EZMOON grow indefinitely.</p>
         </div>
 
-        <div class="col-md-3">
-            <img src="assets/illus/solid swimming-pool.png">
-            <h4>automatic lp</h4>
-            <p>Every trade contributes towards automatically generating liquidity that goes into multiple pools used by exchanges.</p>
+        <div class="col-md-3 d-flex flex-column justify-content-start align-items-center">
+            <div> <img src="assets/illus/solid swimming-pool.png"></div>
+            <h4 class="text-center">automatic lp</h4>
+            <p class="text-center">Every trade contributes towards automatically generating liquidity that goes into multiple pools used by exchanges.</p>
         </div>
 
 
@@ -81,32 +80,35 @@
 
 
 
-    <section>
+    <section class="col">
         <h2>Coin info</h2>
-        <div class="row justify-content-around align-content-center">
-            <div class="col-md-3">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center">
                 <h5>$ 0.000000089</h5>
                 <h4>price</h4>
             </div>
 
 
-            <div class="col-md-3">
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center">
                 <h5>1,000,000,000,000</h5>
                 <h4>supply</h4>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 d-flex flex-column align-items-center justify-content-center">
                 <h5>$ 89,000,000</h5>
                 <h4>market cap</h4>
             </div>
         </div>
-        <div>
+        <div class="col-12 d-flex flex-column justify-content-around align-items-center">
             <h3>contract address</h3>
-            <div>
-                <div>0x807181JaFa98Flad09KKKKKKKa812Lfa80K</div>
-                <a>
-                    <div>COPY</div>
-                </a>
+            <div class=' row '>
+                <div class="col-md-11">0x807181JaFa98Flad09KKKKKKKa812Lfa80K</div>
+                <div class="col-md-1">
+                    <a>
+                        <div>COPY</div>
+                    </a>
+                </div>
+
 
             </div>
         </div>
@@ -135,76 +137,28 @@
     </section>
 
 
-    <section>
+    <sectionclass="col">
 
         <h2>how to buy</h2>
         <div>
 
         </div>
-    </section>
+        </section>
 
 
-    <section>
+        <section id="last-sect" class="col">
 
-        <h2>roadmap</h2>
+            <h2>roadmap</h2>
 
+            <div style="height:500px"></div>
 
-        <div>
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+                <div id="cta-card" class="col d-flex flex-column align-items-center justify-content-end">
 
-            <div>
-                <h2>join us</h2>
-                <p>on our journey to the moon.</p>
-            </div>
-
-            <ul>
-                <a href="">
-                    <li><img src="assets/footer_icons/brand telegram-plane.png"></li>
-                </a>
-                <a href="">
-                    <li><img src="assets/footer_icons/brand facebook-square.png"></li>
-                </a>
-                <a href="">
-                    <li><img src="assets/footer_icons/brand reddit-alien.png"></li>
-                </a>
-                <a href="">
-                    <li><img src="assets/footer_icons/brand twitter.png"></li>
-                </a>
-                <a href="">
-                    <li><img src="assets/footer_icons/brand discord.png"></li>
-                </a>
-            </ul>
-        </div>
-
-
-    </section>
-    <footer class="col justify-content-between align-content-center">
-
-        <div>
-            <a> <img src="assets/illus/logo_footer.png"></a>
-
-            <div>
-
-                <div class="visible-md">
-                    <ul>
-                        <a href="">
-                            <li>Home</li>
-                        </a>
-                        <a href="">
-                            <li>About</li>
-                        </a>
-                        <a href="">
-                            <li>Contract</li>
-                        </a>
-                        <a href="">
-                            <li>Team</li>
-                        </a>
-                        <a href="">
-                            <li>Buy Now</li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div>
+                    <div class="text-center">
+                        <h2>join us</h2>
+                        <p>on our journey to the moon.</p>
+                    </div>
 
                     <ul>
                         <a href="">
@@ -223,36 +177,89 @@
                             <li><img src="assets/footer_icons/brand discord.png"></li>
                         </a>
                     </ul>
+                </div>
+            </div>
+
+
+        </section>
+        <footer class="col d-flex flex-column justify-content-between ">
+
+            <div class="row justify-content-between align-items-md-start ">
+
+                <div class="col-md-3 align-content-center align-content-md-start">
+                    <a href="#"> <img src="assets/illus/logo_footer.png "></a>
+                </div>
+
+                <div class="col-md-9 justify-content-center justify-content-md-end ">
+                    <div class="row justify-content-end">
+                        <ul>
+                            <a href=" ">
+                                <li>Home</li>
+                            </a>
+                            <a href=" ">
+                                <li>About</li>
+                            </a>
+                            <a href=" ">
+                                <li>Contract</li>
+                            </a>
+                            <a href=" ">
+                                <li>Team</li>
+                            </a>
+                            <a href=" ">
+                                <li>Buy Now</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="row justify-content-center justify-content-md-end">
+
+                        <ul>
+                            <a href=" ">
+                                <li><img src="assets/footer_icons/brand telegram-plane.png "></li>
+                            </a>
+                            <a href=" ">
+                                <li><img src="assets/footer_icons/brand facebook-square.png "></li>
+                            </a>
+                            <a href=" ">
+                                <li><img src="assets/footer_icons/brand reddit-alien.png "></li>
+                            </a>
+                            <a href=" ">
+                                <li><img src="assets/footer_icons/brand twitter.png "></li>
+                            </a>
+                            <a href=" ">
+                                <li><img src="assets/footer_icons/brand discord.png "></li>
+                            </a>
+                        </ul>
+
+
+                    </div>
+
 
 
                 </div>
-
-
-
-            </div>
-        </div>
-
-        <div class="row-sm-12 justify-content-between align-content-end">
-
-
-            <div class="col-md-4 align-content-start justify-content-end">
-                <p>some illus by <a>icons8</a></p>
             </div>
 
+            <div class="row d-flex flex-row justify-content-between align-items-end ">
 
-            <div class="row-md-8 align-content-end justify-content-end">
-                <p>© 2021 EZMOON. All Rights Reserved </p>
-                <p>TOS</p>
-                <p>Privacy Policy</p>
+
+                <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start justify-content-end">
+                    <p>some illus by <a>icons8</a></p>
+                </div>
+
+
+                <div class="col-md-8 d-flex flex-row align-items-end justify-content-end ">
+                    <p>© 2021 EZMOON. All Rights Reserved </p>
+                    <p>TOS</p>
+                    <p>Privacy Policy</p>
+                </div>
             </div>
-        </div>
 
 
 
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
 </body>
 
 </html>

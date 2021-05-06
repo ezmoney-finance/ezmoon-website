@@ -12,14 +12,23 @@
     font-weight: normal;
 }
 
+body {
+    background-image: url(assets/bgs/stars-bg.png);
+    background-color: black;
+    background-repeat: repeat-y repeat-x;
+    box-sizing: border-box;
+    /* padding: 60px; */
+}
+
 * {
     font-family: Lato;
-    font-size: 1.1em;
+    font-size: 1.08em;
+    color: white;
 }
 
 h1 {
     font-family: League Spartan;
-    font-size: 3.5em;
+    font-size: 3.0em;
     text-transform: uppercase;
 }
 
@@ -27,12 +36,12 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-family: League Spartan;
-    font-size: 2.5em;
+    font-size: 2.1em;
 }
 
 h3 {
     font-family: League Spartan;
-    font-size: 1.5em;
+    font-size: 1.11em;
     text-transform: uppercase;
 }
 
@@ -57,7 +66,7 @@ div {
     align-items: center;
 } */
 
-#navbar ul {
+ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -65,7 +74,42 @@ div {
     align-items: center;
 }
 
-#navbar ul li {
-    margin-left: 20px;
+ul li {
+    margin-left: 10px;
+    margin-right: 10px;
     text-decoration: none;
+}
+
+#cta-card {
+    background-color: #2D44C9;
+    border-radius: 16px;
+}
+
+#last-sect {
+    background-image: url(assets/bgs/pedro-lastra-wCujVcf0JDw-unsplash.jpg);
+    background-size: 215vw;
+    /* position: absolute;
+    bottom: 00px; */
+    /* background-position: ; */
+}
+
+#logo {
+    height: 100%;
+}
+
+header {
+    box-sizing: border-box;
+    padding: 20px 70px 0 70px;
+    max-width: 1700px;
+}
+
+section {
+    box-sizing: border-box;
+    /* max-width: 1700px;
+    margin: auto; */
+    /* justify-self: center; */
+}
+
+footer {
+    background-color: #313131;
 }
